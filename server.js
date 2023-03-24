@@ -1,4 +1,4 @@
-const connectDB = require('../db/db')
+const connectDB = require('./db/db')
 const app = require('./app')
 
 
@@ -14,7 +14,7 @@ if(process.env.NODE_ENV !="PRODUCTION"){
     require('dotenv').config({
         path:'config/.env'
     })
-}    
+}     
 
 //connect database
 connectDB()      
